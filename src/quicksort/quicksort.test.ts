@@ -11,7 +11,6 @@ describe("Quicksort test", () => {
 
     test("Quicksort 1", () => {
         const res = quickSort(arr);
-        console.log(res);
         expect(res).toEqual(sorted);
     });
 
