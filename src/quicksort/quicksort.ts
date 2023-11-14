@@ -1,3 +1,5 @@
+import { swap } from "../utils";
+
 export function quickSort(values: number[]): number[] {
     // let max = Number.NEGATIVE_INFINITY;
     // let indexOfMax = 0;
@@ -49,12 +51,6 @@ function partition(l: number, h: number, values: number[]): number {
     }
     swap(l, j, values);
     return j;
-}
-
-function swap(i: number, j: number, arr: number[]) {
-    const temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
 }
 
 export function quickSort2(arr: number[]): number[] {
